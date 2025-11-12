@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+.blog-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+  padding: 24px;
+  max-width: 384px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 16px 16px 0px 0px hsl(0, 0%, 7%);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-badge {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.publish-date {
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-title {
+  color: hsl(0, 0%, 7%);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.card-description {
+  color: hsl(0, 0%, 42%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .blog-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}
